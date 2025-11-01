@@ -1,0 +1,14 @@
+# Save this as requirements.txt
+#
+ultralytics>=8.0.20
+opencv-python
+torch>=1.13.0  # or appropriate for your GPU
+torchvision
+numpy
+pandas
+pillow
+tqdm
+pyyaml
+aiofiles
+moviepy  # optional, for video handling convenience
+streamlit
