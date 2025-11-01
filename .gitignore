@@ -135,3 +135,26 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Model files (should be downloaded, not committed)
+*.pt
+*.onnx
+*.pth
+*.weights
+*.h5
+yolov8*.pt
+yolov5*.pt
+
+# Training outputs
+runs/
+weights/
+checkpoints/
+
+# Temporary files
+*.tmp
+*.temp
+1.24.0
+
+# OS files
+.DS_Store
+Thumbs.db
