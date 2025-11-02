@@ -1,0 +1,72 @@
+═══════════════════════════════════════════════════════════════
+  📱 INSTALL OBJECT DETECTION APP ON YOUR IPHONE
+═══════════════════════════════════════════════════════════════
+
+STEP 1: Make sure server is running
+─────────────────────────────────────
+✅ Server should be running in a PowerShell window
+✅ You should see: "Server running at http://localhost:8000/"
+
+STEP 2: Find the correct IP address
+─────────────────────────────────────
+Your computer has these IP addresses:
+• 172.20.10.4  ← Try this FIRST (most common for iPhone)
+• 192.168.56.1
+• 192.168.120.1
+• 192.168.198.1
+
+To find which one matches your iPhone:
+1. On iPhone: Settings → Wi-Fi → Tap (i) next to your network
+2. Note the "Router" IP address
+3. Your computer's IP should match the same subnet
+   (e.g., if router is 172.20.10.1, use 172.20.10.4)
+
+STEP 3: Open on iPhone
+─────────────────────────────────────
+1. Open SAFARI (NOT Chrome!) on your iPhone
+2. Type in address bar: http://172.20.10.4:8000
+   (Replace with your actual IP if different)
+3. Tap Go
+4. Wait for the app to load
+
+STEP 4: Install to Home Screen
+─────────────────────────────────────
+1. Tap the Share button (📤) at bottom of Safari
+2. Scroll down to find "Add to Home Screen"
+3. Tap "Add to Home Screen"
+4. Tap "Add" (top-right)
+5. Done! ✅
+
+STEP 5: Launch Your App
+─────────────────────────────────────
+• Find the icon on your home screen
+• Tap it to launch
+• Works like a native iPhone app!
+
+═══════════════════════════════════════════════════════════════
+
+TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════
+
+❌ Can't connect?
+   → Make sure iPhone and computer on same Wi-Fi
+   → Try the other IP addresses above
+   → Check Windows Firewall (see below)
+
+❌ Firewall blocking?
+   → Run PowerShell as Administrator
+   → Run this command:
+     New-NetFirewallRule -DisplayName "App Server" -Direction Inbound -LocalPort 8000 -Protocol TCP -Action Allow
+
+❌ Page won't install?
+   → Must use Safari, not Chrome
+   → Make sure page fully loaded first
+   → Try refreshing the page
+
+═══════════════════════════════════════════════════════════════
+
+Your app URL: http://172.20.10.4:8000
+(Replace with your actual IP address)
+
+═══════════════════════════════════════════════════════════════
+

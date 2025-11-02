@@ -5,3 +5,5 @@ call venv\Scripts\activate.bat
 echo Starting Object Detection Studio...
 streamlit run app.py
 
+
+
