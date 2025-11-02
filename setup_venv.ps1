@@ -17,3 +17,5 @@ pip install -r requirements.txt
 Write-Host "`nSetup complete! You can now run the app with:" -ForegroundColor Cyan
 Write-Host "  streamlit run app.py" -ForegroundColor White
 
+
+
